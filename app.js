@@ -18,7 +18,9 @@ var finalCoord2 = 16.933992;
 app.get("/", function(req, res) {
   res.render("home", {
     finalCoord1: magellan(finalCoord1).toDMS(),
-    finalCoord2: magellan(finalCoord1).toDMS()
+    finalCoord2: magellan(finalCoord1).toDMS(),
+    mapCoord1: finalCoord1,
+    mapCoord2: finalCoord2
   });
 });
 
