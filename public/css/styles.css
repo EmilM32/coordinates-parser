@@ -1,0 +1,26 @@
+.container {
+  margin-top: 2rem;
+  background-color: #c5f8c8;
+  border-radius: 10px;
+  padding: 2rem
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.result {
+  text-align: center;
+}
+
+#map {
+  width: auto;
+  height: 400px;
+}
+
+.form-control span {
+  color: grey;
+  font-size: 50%;
+}

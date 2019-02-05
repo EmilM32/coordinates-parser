@@ -1,0 +1,46 @@
+<%- include("header") -%>
+
+<div class="container">
+
+
+<form action="/" method="post">
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" id="input1" name="input1" placeholder="Współrzędna 1">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" id="input2" name="input2" placeholder="Współrzędna 2">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-2">
+      <label class="col-form-label">Moje współrzędne</label>
+    </div>
+    <div class="col-4">
+        <select class="form-control" id="coord1" name="coord1">
+          <option value="dd">DD <span>degrees-decimal / 12.3456</span></option>
+          <option value="dms">DMS <span>degrees-minutes-seconds / 12°34\'56.7890"S</span></option>
+        </select>
+    </div>
+    <div class="col-2">
+      <label class="col-form-label">Docelowe współrzędne</label>
+    </div>
+    <div class="col-4">
+        <select class="form-control" id="coord2" name="coord2">
+          <option value="dd">DD <span>degrees-decimal / 12.3456</span></option>
+          <option value="dms">DMS <span>degrees-minutes-seconds / 12°34\'56.7890"S</span></option>
+        </select>
+    </div>
+  </div>
+  <div class="center">
+    <button type="submit" name="button" class="btn btn-success">Zamień</button>
+  </div>
+</form>
+
+<h3 class="result"><%= finalCoord1 %> <%= finalCoord2 %></h3>
+
+  <div id="map"></div>
+
+</div>
+
+<%- include("footer") -%>
