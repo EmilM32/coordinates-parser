@@ -5,4 +5,4 @@
 Parse your coordinates from/to DMS (degrees-minutes-seconds) and DM (degrees-decimal) system. 
 App hosted on heroku. 
 
-Using (Magellan)[http://dbarbalato.github.io/magellan/] to parse coords.
+Using [Magellan](http://dbarbalato.github.io/magellan/) to parse coords.
